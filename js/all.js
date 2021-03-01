@@ -35,11 +35,6 @@ function domElements() {
     var html = document.querySelector('html');
     html.style.setProperty('--col', docCol + 'px');
     html.style.setProperty('--vh', window_height + 'px');
-    var document_height = $(document).outerHeight(true);
-    var perc = scroll_y / (document_height - window_height) * 100;
-    $('div.scrollbar div.bar div.scroll').css({
-        'top': perc + '%'
-    });
 }
 
 /* ------------------------------------------------------ */

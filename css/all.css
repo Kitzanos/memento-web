@@ -29,22 +29,7 @@ body {
     line-height: 1.5;
     color: #074D79;
     overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overflow-x: hidden;
     overflow-y: scroll;
-}
-
-body::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-    display: none;
-}
-
-@-moz-document url-prefix() {
-    html {
-        scrollbar-width: none;
-    }
 }
 
 /* header */
@@ -152,10 +137,6 @@ section.home div.text h1 {
     font-size: var(--px66);
     font-weight: 700;
     line-height: 1.4;
-}
-
-section.home>div.image {
-    padding-right: var(--col);
 }
 
 section.home h2 {

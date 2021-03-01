@@ -1,28 +1,18 @@
-<?php
-$serverPath = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-$urlCorrente = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
-$siteTitle = 'Memento';
-
-$siteDescription = 'Memento è una piattaforma cloud native per semplificare le attività di monitortaggioe incasso dei crediti commerciali da parte di aziende e professionisti del settore.';
-
-$ver = '?ver=' . date('YmdHis');
-?>
 <!doctype html>
 <html lang="it">
 <head>
     <title>Memento - Incassa i tuoi crediti senza fatica</title>
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="<?php echo $urlCorrente ?>" />
-    <meta name="twitter:title" content="<?php echo $siteTitle ?>" />
-    <meta name="twitter:description" content="<?php echo $siteDescription ?>" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="Memento" />
+    <meta name="twitter:description" content="Memento è una piattaforma cloud native per semplificare le attività di monitortaggioe incasso dei crediti commerciali da parte di aziende e professionisti del settore." />
     <!-- Open Graph data -->
-    <meta property="og:url" content="<?php echo $urlCorrente ?>" />
+    <meta property="og:url" content="" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php echo $siteTitle ?>" />
-    <meta property="og:description" content="<?php echo $siteDescription ?>" />
-    <meta property="og:image" content="<?php echo $urlCorrente ?>" />
+    <meta property="og:title" content="Memento" />
+    <meta property="og:description" content="Memento è una piattaforma cloud native per semplificare le attività di monitortaggioe incasso dei crediti commerciali da parte di aziende e professionisti del settore." />
+    <meta property="og:image" content="img/memento-home-devices.jpg" />
     <meta property="og:site_name" content="" />
     <!-- meta -->
     <meta charset="utf-8">
@@ -33,7 +23,7 @@ $ver = '?ver=' . date('YmdHis');
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="description" content="<?php echo $siteDescription ?>" />
+    <meta name="description" content="Memento è una piattaforma cloud native per semplificare le attività di monitortaggioe incasso dei crediti commerciali da parte di aziende e professionisti del settore." />
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -49,8 +39,8 @@ $ver = '?ver=' . date('YmdHis');
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/aos.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/all.css<?php echo $ver ?>" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/all-responsive.css<?php echo $ver ?>" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/all.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/all-responsive.css" />
 </head>
 <body>
     <!-- header -->
@@ -355,13 +345,9 @@ $ver = '?ver=' . date('YmdHis');
             </div>
         </div>
     </div>
-    <!-- scrollbar -->
-    <div class="scrollbar">
-        <div class="bar"><div class="scroll"></div></div>
-    </div>
     <!-- script -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/aos.js"></script>
-    <script type="text/javascript" src="js/all.js<?php echo $ver ?>"></script>
+    <script type="text/javascript" src="js/all.js"></script>
 </body>
 </html>
