@@ -303,7 +303,7 @@ fill="url(#mask-1-grad)"/></svg></div>
     </section>
     <!-- contacts -->
     <section class="contacts" id="contact-form">
-        <form action="" enctype="multipart/form-data" method="post">
+        <form action="https://formspree.io/f/mzbklwor" enctype="multipart/form-data" method="post">
             <div class="boxed">
                 <div class="text" data-aos="fade-in" data-aos-offset="150" data-aos-duration="1000" data-aos-delay="0">
                     <h6>Contattaci</h6>
@@ -311,18 +311,18 @@ fill="url(#mask-1-grad)"/></svg></div>
                 </div>
                 <div class="module" data-aos="fade-in" data-aos-offset="150" data-aos-duration="1000" data-aos-delay="0">
                     <div>
-                        <input type="text" id="nome" name="nome" value="" placeholder="Nome e Cognome">
+                        <input required type="text" id="nome" name="nome" value="" placeholder="Nome e Cognome">
                     </div>
                     <div>
-                        <input type="text" id="email" name="email" value="" placeholder="E-mail">
+                        <input required type="email" id="email" name="email" value="" placeholder="E-mail">
                     </div>
                     <div class="full">
-                        <textarea type="text" id="messaggio" name="messaggio" rows="8" placeholder="Motivo del contatto"></textarea>
+                        <textarea  required type="text" id="messaggio" name="messaggio" rows="8" placeholder="Motivo del contatto"></textarea>
                     </div>
                     <div class="full privacy">
                         <label for="privacy">
                             <span>
-                                <input type="checkbox" id="privacy" name="privacy" value="accetto">
+                                <input required type="checkbox" id="privacy" name="privacy" value="accetto">
                             </span>
                             <span>
                                 <p>Confermo di aver preso visione dell' <a href='/policy.html'>informativa sul trattamento dei dati</a></p>
@@ -330,7 +330,7 @@ fill="url(#mask-1-grad)"/></svg></div>
                         </label>
                     </div>
                     <div class="full button">
-                        <button type="send">Invia richiesta</button>
+                        <button type="submit">Invia richiesta</button>
                     </div>
                 </div>
             </div>
