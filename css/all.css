@@ -477,13 +477,38 @@ section.screenshot>div {
     width: 50%;
 }
 
+section.screenshot#client-analyze div.text {
+    padding: 0 0 0 var(--col);
+}
+
+section.screenshot#client-analyze div.text p img {
+    margin-top: var(--col);
+}
+
+section.screenshot#client-analyze div.photo {
+    padding-left: -webkit-calc(var(--col) * 0.5);
+    padding-left: -moz-calc(var(--col) * 0.5);
+    padding-left: calc(var(--col) * 0.5);
+    padding-right: -webkit-calc(var(--col) * 1);
+    padding-right: -moz-calc(var(--col) * 1);
+    padding-right: calc(var(--col) * 1);
+}
+
+section.screenshot#client-analyze div.photo p {
+    padding-right: 0;
+}
+
+section.screenshot#client-analyze div.photo p img {
+    margin-bottom: var(--col);
+}
+
 section.screenshot div.text {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -moz-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    padding: 0 var(--col);
+    padding: 0 var(--col) 0 var(--col);
 }
 
 section.screenshot div.photo {
@@ -514,14 +539,14 @@ section.screenshot.alt div.photo {
     padding: 0 var(--col);
 }
 
-section.screenshot div.text h4 {
+section.screenshot h4 {
     font-size: var(--px40);
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 1px;
 }
 
-section.screenshot div.text p {
+section.screenshot p {
     font-size: var(--px18);
     line-height: 1.6667;
     margin-top: var(--px30);
@@ -811,6 +836,10 @@ section.contacts div.boxed div.module>div.full.privacy label {
     cursor: pointer;
 }
 
+section.contacts div.boxed div.module>div.full.privacy label a {
+    color: #074D79;
+}
+
 section.contacts div.boxed div.module input,
 section.contacts div.boxed div.module textarea {
     width: 100%;
@@ -1017,11 +1046,17 @@ section.page ol {
 section.page a {
     color: #328676;
     font-weight: 600;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    -moz-transition: 0.35s;
     transition: 0.35s;
 }
 
 section.page a:hover {
     color: #074D79;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    -moz-transition: 0.35s;
     transition: 0.35s;
 }
 
@@ -1224,4 +1259,688 @@ div.mask svg {
     display: block;
     width: 100%;
     height: auto;
+}
+
+/* responsive */
+@media only screen and (max-width: 1440px) {
+    section.home div.text h1 {
+        font-size: var(--px50);
+        line-height: 1.25;
+    }
+
+    section.home h2 {
+        font-size: var(--px16);
+    }
+
+    section.home div.text ul li a.button {
+        padding: var(--px20) 0;
+    }
+
+    section.collections-credits h3 {
+        font-size: var(--px24);
+    }
+
+    section.collections-credits div.group div.text {
+        font-size: var(--px20);
+    }
+
+    section.collections-credits div.group div.text a.button {
+        padding: var(--px20) 0;
+    }
+
+    section.screenshot div.text h4 {
+        font-size: var(--px30);
+    }
+
+    section.coming-soon div.text {
+        max-width: 60%;
+    }
+
+    section.coming-soon div.text h4 {
+        font-size: 30px;
+    }
+
+    section.coming-soon div.text a {
+        font-size: var(--px18);
+    }
+
+    section.coming-soon div.text a span:first-child svg {
+        height: 80px;
+    }
+
+    section.contacts div.boxed {
+        padding: var(--col);
+    }
+
+    footer>div {
+        padding: var(--col);
+    }
+
+    div.credits>div {
+        padding: 0 var(--col);
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    section.features div.group {
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.real-time-metrics div.text h4 {
+        font-size: 30px;
+    }
+
+    section.contacts div.boxed div.text,
+    footer>div>div.logo {
+        width: -webkit-calc(40% - var(--col));
+        width: -moz-calc(40% - var(--col));
+        width: calc(40% - var(--col));
+    }
+
+    section.contacts div.boxed div.text h6 {
+        font-size: 30px;
+    }
+
+    section.contacts div.boxed div.text p {
+        font-size: var(--px16);
+    }
+
+    section.contacts div.boxed div.module,
+    footer>div>div.text {
+        width: 60%;
+    }
+
+    div.credits>div>div.links {
+        width: 40%;
+    }
+
+    div.credits>div>div.copyright {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    div.scrollbar {
+        right: var(--px30);
+        display: none;
+    }
+
+    header {
+        padding: var(--px40) var(--col);
+    }
+
+    header div.logo {
+        width: 200px;
+    }
+
+    section.home div.text h1 {
+        font-size: 36px;
+    }
+
+    section.home div.text ul {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin: var(--px40) 0 0 0
+    }
+
+    section.home div.text ul li a.button {
+        padding: var(--px16) 0;
+        width: 150px;
+    }
+
+    section.home h2 {
+        padding-right: var(--col);
+        margin: var(--px50) 0;
+    }
+
+    section.collections-credits div.group div.photo {
+        width: 50%;
+        min-height: auto;
+    }
+
+    section.collections-credits div.group div.text {
+        width: 50%;
+        padding: -webkit-calc(var(--col) * 2) var(--col) -webkit-calc(var(--col) * 1.5) var(--col);
+        padding: -moz-calc(var(--col) * 2) var(--col) -moz-calc(var(--col) * 1.5) var(--col);
+        padding: calc(var(--col) * 2) var(--col) calc(var(--col) * 1.5) var(--col);
+    }
+
+    section.collections-credits div.group div.text ul li {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    section.collections-credits div.group div.text ul li::before {
+        top: 5px;
+        width: 24px;
+        height: 24px;
+    }
+
+    section.collections-credits div.group div.text a.button {
+        width: 160px;
+        padding: 18px 0;
+    }
+
+    section.screenshot h4 {
+        font-size: 24px;
+        line-height: 1.35;
+    }
+
+    section.screenshot p {
+        font-size: 14px;
+    }
+
+    section.screenshot div.photo img {
+        max-width: -webkit-calc(var(--col) * 6.5);
+        max-width: -moz-calc(var(--col) * 6.5);
+        max-width: calc(var(--col) * 6.5);
+    }
+
+    section.credits-segmentation-aging>div {
+        padding-right: -webkit-calc(var(--col) * 2);
+        padding-right: -moz-calc(var(--col) * 2);
+        padding-right: calc(var(--col) * 2);
+    }
+
+    section.real-time-metrics {
+        padding: -webkit-calc(var(--col) * 2.5) 0;
+        padding: -moz-calc(var(--col) * 2.5) 0;
+        padding: calc(var(--col) * 2.5) 0;
+    }
+
+    section.coming-soon div.text {
+        max-width: 80%;
+    }
+
+    section.coming-soon div.text a span:first-child svg {
+        height: 65px;
+    }
+
+    section.contacts div.boxed {
+        padding: var(--col) 0;
+    }
+
+    section.contacts div.boxed div.text p {
+        font-size: 14px;
+    }
+
+    section.contacts div.boxed div.module>div.full.button button {
+        padding: 16px 26px;
+    }
+
+    footer {
+        letter-spacing: normal;
+    }
+
+    footer>div {
+        padding: var(--col) -webkit-calc(var(--col) / 2) var(--col) 0;
+        padding: var(--col) -moz-calc(var(--col) / 2) var(--col) 0;
+        padding: var(--col) calc(var(--col) / 2) var(--col) 0;
+    }
+
+    footer>div>div.logo svg {
+        width: 200px;
+    }
+
+    div.credits>div {
+        padding: 0;
+    }
+
+    div.credits>div>div {
+        width: auto;
+    }
+
+    div.credits>div>div.copyright {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section.home {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    section.home {
+        text-align: center;
+    }
+
+    section.home div.image {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        width: 100%;
+        padding: 0 -webkit-calc(var(--col) * 2);
+        padding: 0 -moz-calc(var(--col) * 2);
+        padding: 0 calc(var(--col) * 2);
+        margin-top: 20px;
+    }
+
+    section.home div.text {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        width: 100%;
+        padding: 0;
+    }
+
+    section.home div.text ul {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    section.home div.text ul li {
+        margin: 0 20px;
+    }
+
+    section.home h2 {
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+        -moz-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        width: 100%;
+        padding: 0;
+    }
+
+    section.collections-credits h3 {
+        font-size: 18px;
+    }
+
+    section.collections-credits div.group {
+        margin-top: 50px;
+        display: block;
+    }
+
+    section.collections-credits div.group div.photo {
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%;
+    }
+
+    section.collections-credits div.group div.text {
+        width: 100%;
+        padding: var(--col);
+    }
+
+    section.collections-credits div.group div.text a.button {
+        margin: 30px 0 30px auto;
+    }
+
+    section.collections-credits div.group div.mask.mask-bottom {
+        bottom: -1px;
+    }
+
+    section.features div.group {
+        padding: 0 var(--col);
+    }
+
+    section.real-time-metrics div.text {
+        padding-right: var(--col);
+    }
+
+    section.screenshot {
+        display: block;
+    }
+
+    section.screenshot * {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    section.screenshot>div {
+        width: 100% !important;
+        padding: 0 var(--col) !important;
+    }
+
+    section.screenshot div.photo img {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+
+    section.screenshot#client-analyze div.text,
+    section.screenshot#client-analyze div.photo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    section.screenshot#client-analyze div.text p,
+    section.screenshot#client-analyze div.photo p {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    section.screenshot#client-analyze div.text p.screen,
+    section.screenshot#client-analyze div.photo p.screen {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    section.screenshot#client-analyze img {
+        margin: 20px 0 !important;
+        padding: 0 !important;
+    }
+
+    section.real-time-metrics div.text h4 {
+        font-size: 24px;
+    }
+
+    section.real-time-metrics div.photo {
+        padding: 0 var(--col);
+    }
+
+    section.real-time-metrics div.mask.mask-bottom {
+        bottom: -1px;
+    }
+
+    section.credits-segmentation-aging {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr var(--col) 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: var(--col);
+    }
+
+    section.credits-segmentation-aging>div {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    section.coming-soon div.text {
+        max-width: 100%;
+    }
+
+    section.contacts div.boxed {
+        display: block;
+    }
+
+    section.contacts div.boxed div.text,
+    section.contacts div.boxed div.module {
+        width: 100%;
+    }
+
+    section.contacts div.boxed div.module {
+        margin-top: 30px;
+    }
+
+    footer>div {
+        display: block;
+        padding: var(--col) 0;
+    }
+
+    footer>div div.logo,
+    footer>div div.text {
+        width: 100%;
+    }
+
+    footer>div div.text {
+        margin-top: 40px;
+    }
+
+    div.credits>div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    div.credits>div>div.links,
+    div.credits>div>div.copyright {
+        width: 100%;
+        text-align: center;
+    }
+
+    div.credits>div>div.links {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    div.credits>div>div.links ul {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    div.credits>div>div.links ul li {
+        margin: 16px 20px 0 20px;
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    header {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    section.home div.text h1 {
+        font-size: 30px;
+    }
+
+    section.features div.group {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    section.features div.group div.item div.icon {
+        margin-right: var(--col);
+    }
+
+    section.features div.group div.item div.icon svg {
+        width: 48px;
+    }
+
+    section.real-time-metrics {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.real-time-metrics>div {
+        width: 100%;
+    }
+
+    section.real-time-metrics div.photo img {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    section.real-time-metrics div.text {
+        padding: 0 var(--col);
+        margin-top: 30px;
+    }
+
+    section.coming-soon {
+        padding: -webkit-calc(var(--col) * 3) var(--col) -webkit-calc(var(--col) * 1.5) var(--col);
+        padding: -moz-calc(var(--col) * 3) var(--col) -moz-calc(var(--col) * 1.5) var(--col);
+        padding: calc(var(--col) * 3) var(--col) calc(var(--col) * 1.5) var(--col);
+    }
+
+    section.coming-soon div.text h4 {
+        font-size: 24px;
+    }
+
+    section.coming-soon div.text p {
+        margin: 30px 0;
+    }
+
+    section.coming-soon div.mask.mask-bottom {
+        bottom: -1px;
+    }
+
+    section.page div.box {
+        font-size: var(--px14);
+    }
+
+    section.page h1 {
+        font-size: 160%;
+    }
+
+    section.page h2 {
+        font-size: 150%;
+    }
+
+    section.page h3 {
+        font-size: 140%;
+    }
+
+    section.page h4 {
+        font-size: 130%;
+    }
+
+    section.page h5 {
+        font-size: 120%;
+    }
+
+    section.page h6 {
+        font-size: 110%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section.home div.text ul li {
+        margin: 0 10px;
+    }
+
+    section.home div.text ul li a.button {
+        width: 140px;
+    }
+
+    section.screenshot {
+        padding: 60px 0;
+    }
+
+    section.real-time-metrics {
+        padding: 100px var(--col);
+    }
+
+    section.real-time-metrics div.photo img {
+        max-width: 65%;
+    }
+
+    section.credits-segmentation-aging {
+        padding: 50px var(--col);
+    }
+
+    section.credits-segmentation-aging>div {
+        text-align: center;
+    }
+
+    section.credits-segmentation-aging>div div.icon svg {
+        margin: 0 auto;
+    }
+
+    section.credits-segmentation-aging>div h5 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    section.contacts div.boxed div.module>div {
+        -ms-grid-column: 1;
+        grid-column-start: 1;
+        -ms-grid-column-span: 2;
+        grid-column-end: 3;
+    }
+
+    section.coming-soon {
+        padding: -webkit-calc(var(--col) * 4) var(--col) -webkit-calc(var(--col) * 2.5) var(--col);
+        padding: -moz-calc(var(--col) * 4) var(--col) -moz-calc(var(--col) * 2.5) var(--col);
+        padding: calc(var(--col) * 4) var(--col) calc(var(--col) * 2.5) var(--col);
+    }
+
+    section.coming-soon div.text p {
+        font-size: 16px;
+    }
+
+    section.contacts div.boxed {
+        padding: 50px 0 70px 0;
+    }
+
+    section.contacts div.boxed div.module>div.full.button button {
+        width: 100%;
+    }
+
+    footer>div>div.logo svg {
+        margin: 0 auto;
+    }
+
+    footer>div div.text {
+        display: block;
+        text-align: center;
+    }
+
+    footer>div>div.text>div:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    footer>div>div.text h6 {
+        font-size: 16px;
+    }
+
+    div.credits>div>div.links ul li {
+        margin: 10px 15px 0 15px;
+    }
+
+    footer>div>div.logo svg {
+        width: 150px;
+    }
+
+    div.credits {
+        padding: 15px var(--col);
+    }
 }
