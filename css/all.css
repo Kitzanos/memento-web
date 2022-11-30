@@ -1754,6 +1754,7 @@ div.mask svg {
         -moz-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+        flex-direction: column;
     }
 
     div.credits>div>div.links ul li {
