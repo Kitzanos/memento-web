@@ -1043,6 +1043,18 @@ section.page ol {
     margin-left: var(--px20);
 }
 
+section.page ul.no-style {
+    list-style: none;
+}
+
+section.page>div.box>ul.no-style {
+    margin-left: 0 !important;
+}
+
+section.page li {
+    margin-top: var(--px20);
+}
+
 section.page a {
     color: #328676;
     font-weight: 600;
