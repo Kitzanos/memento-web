@@ -233,6 +233,12 @@ section.home div.text ul li a.button.blue-bordered {
     font-weight: 600;
 }
 
+section.home div.image img.logo {
+    width: max(120px, calc(300vw / 19.2));
+    height: auto;
+    margin: 0 auto max(30px, calc(40vw / 19.2)) auto;
+}
+
 /* home-enter */
 div.home-enter {
     text-align: center;
@@ -1572,9 +1578,9 @@ div.mask svg {
         -ms-flex-order: 1;
         order: 1;
         width: 100%;
-        padding: 0 -webkit-calc(var(--col) * 2);
-        padding: 0 -moz-calc(var(--col) * 2);
-        padding: 0 calc(var(--col) * 2);
+        padding: 0 -webkit-calc(var(--col) * 1);
+        padding: 0 -moz-calc(var(--col) * 1);
+        padding: 0 calc(var(--col) * 1);
         margin-top: 20px;
     }
 
