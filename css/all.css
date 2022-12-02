@@ -126,6 +126,20 @@ section.home>div {
     margin-top: var(--px50);
 }
 
+section.home.alt {
+    margin-bottom: max(50px, calc(70vw / 19.2));
+}
+
+section.home.alt>div:nth-child(1) {
+    width: 58%;
+    margin-top: 0;
+}
+
+section.home.alt>div:nth-child(2) {
+    width: 42%;
+    margin-top: 0;
+}
+
 section.home div.text {
     padding-right: -webkit-calc(var(--col) * 1);
     padding-right: -moz-calc(var(--col) * 1);
@@ -134,9 +148,31 @@ section.home div.text {
 }
 
 section.home div.text h1 {
-    font-size: var(--px66);
+    font-size: max(30px, calc(66vw / 19.2));
     font-weight: 700;
     line-height: 1.4;
+}
+
+section.home.alt div.text h1 {
+    font-weight: 600;
+}
+
+section.home.alt div.text h1 strong {
+    color: #1EA3D6;
+}
+
+section.home div.text h3 {
+    font-size: max(20px, calc(34vw / 19.2));
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: max(24px, calc(34vw / 19.2));
+}
+
+section.home div.text h4 {
+    font-size: max(16px, calc(28vw / 19.2));
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: max(20px, calc(28vw / 19.2));
 }
 
 section.home h2 {
@@ -164,20 +200,16 @@ section.home div.text ul {
     margin: var(--px66) 0 0 0;
 }
 
-section.home div.text ul li {
-    margin-right: max(32px, 1.6667vw);
-}
-
 section.home div.text ul li a.button {
     display: block;
+    width: max-content;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    padding: max(26px, 1.3542vw) 0;
+    padding: max(18px, calc(20vw / 19.2)) max(30px, calc(40vw / 19.2));
     font-size: var(--px14);
     line-height: 1;
     letter-spacing: var(--px1);
-    width: max(200px, 10.4167vw);
     -webkit-border-radius: max(6px, 0.3125vw);
     -moz-border-radius: max(6px, 0.3125vw);
     border-radius: max(6px, 0.3125vw);
@@ -1284,10 +1316,6 @@ div.mask svg {
         font-size: var(--px16);
     }
 
-    section.home div.text ul li a.button {
-        padding: var(--px20) 0;
-    }
-
     section.collections-credits h3 {
         font-size: var(--px24);
     }
@@ -1399,11 +1427,6 @@ div.mask svg {
         -ms-flex-direction: row;
         flex-direction: row;
         margin: var(--px40) 0 0 0
-    }
-
-    section.home div.text ul li a.button {
-        padding: var(--px16) 0;
-        width: 150px;
     }
 
     section.home h2 {
@@ -1526,6 +1549,16 @@ div.mask svg {
 
     section.home {
         text-align: center;
+    }
+
+    section.home.alt {
+        display: grid;
+        gap: 40px;
+    }
+
+    section.home.alt>div:nth-child(1),
+    section.home.alt>div:nth-child(2) {
+        width: 100%;
     }
 
     section.home div.image {
@@ -1868,10 +1901,6 @@ div.mask svg {
 @media only screen and (max-width: 480px) {
     section.home div.text ul li {
         margin: 0 10px;
-    }
-
-    section.home div.text ul li a.button {
-        width: 140px;
     }
 
     section.screenshot {
