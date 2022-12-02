@@ -168,6 +168,10 @@ section.home div.text h3 {
     margin-bottom: max(24px, calc(34vw / 19.2));
 }
 
+section.home.alt div.text h3 strong {
+    color: #1EA3D6;
+}
+
 section.home div.text h4 {
     font-size: max(16px, calc(28vw / 19.2));
     font-weight: 500;
