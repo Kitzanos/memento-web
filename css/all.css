@@ -173,7 +173,7 @@ section.home.alt div.text h3 strong {
 }
 
 section.home div.text h4 {
-    font-size: max(16px, calc(28vw / 19.2));
+    font-size: max(16px, calc(24vw / 19.2));
     font-weight: 500;
     line-height: 1.4;
     margin-top: max(20px, calc(28vw / 19.2));
