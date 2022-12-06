@@ -589,7 +589,7 @@ section.screenshot h4 {
 }
 
 section.screenshot p {
-    font-size: var(--px18);
+    font-size: max(16px, calc(18vw / 19.2));
     line-height: 1.6667;
     margin-top: var(--px30);
     padding-right: var(--col);
@@ -1475,10 +1475,6 @@ div.mask svg {
     section.screenshot h4 {
         font-size: 24px;
         line-height: 1.35;
-    }
-
-    section.screenshot p {
-        font-size: 14px;
     }
 
     section.screenshot div.photo img {
