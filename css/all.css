@@ -602,6 +602,35 @@ section.screenshot div.photo img {
     max-width: calc(var(--col) * 6);
 }
 
+section.screenshot a.button {
+    display: block;
+    width: max-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: max(18px, calc(20vw / 19.2)) max(30px, calc(40vw / 19.2));
+    font-size: var(--px14);
+    line-height: 1;
+    letter-spacing: var(--px1);
+    -webkit-border-radius: max(6px, 0.3125vw);
+    -moz-border-radius: max(6px, 0.3125vw);
+    border-radius: max(6px, 0.3125vw);
+}
+
+section.screenshot a.button.green {
+    background: #41C7AE;
+    border: 1px solid #41C7AE;
+    color: white;
+    font-weight: 700;
+}
+
+section.screenshot a.button.blue-bordered {
+    background: white;
+    border: 1px solid #034C66;
+    color: #0C4D65;
+    font-weight: 600;
+}
+
 /* real-time-metrics */
 section.real-time-metrics {
     padding: -webkit-calc(var(--col) * 3) 0;
