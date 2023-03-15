@@ -1,0 +1,67 @@
+<script>
+
+    if (window.jQuery === undefined)
+    {
+        var script = document.createElement('script');
+        script.type = "text/javascript";
+        script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js";
+        document.getElementsByTagName('head')[0].appendChild(script);
+        var script = document.createElement('script');
+        script.type = "text/javascript";
+        script.src = "https://code.jquery.com/ui/1.12.1/jquery-ui.js";
+        document.getElementsByTagName('head')[0].appendChild(script);
+        var script = document.createElement('link');
+        script.type = "text/css";
+        script.rel = 'stylesheet';
+        script.href = "//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css";
+        document.getElementsByTagName('head')[0].appendChild(script);
+    } else {
+        if (typeof jQuery.ui === 'undefined') {
+            var script = document.createElement('script');
+            script.type = "text/javascript";
+            script.src = "https://code.jquery.com/ui/1.12.1/jquery-ui.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+            jQuery('head').append('<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css" />');
+        }
+    }
+</script>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <form id="__vtigerWebForm" name="NPS" action="https://bflows.opencrmitalia.com/modules/AdvancedWebform/capture.php" method="post" accept-charset="utf-8" enctype="multipart/form-data"><input type="hidden" name="__vtrftk" value="sid:afe167a709596fac50507755885ad27b25bc9e7e,1658127647">
+            <input type="hidden" id="autosubmit" name="autosubmit" value="0">
+            <input type="hidden" name="publicid" value="89e4ee2963a17aac97735da928de168b">
+            <input type="hidden" name="urlencodeenable" value="1">
+            <input type="hidden" name="record" value="0">
+            <input type="hidden" name="name" value="NPS">
+                        <table>
+                                                                                                                    <tbody><tr>
+
+                        <td><label>NPS*</label></td>                        <td>
+                                                                                                                                                                                <input type="text" name="nps" data-label="" value="" required="">                                                    </td></tr>
+                                                                                                                        <tr>
+
+                                                <td>
+                                                                                                                                                                                <input type="hidden" name="azienda" data-label="" value="11x0">
+                                                                <input type="hidden" value="" readonly="/">
+                                                    </td></tr>
+                                                                                                                        <tr>
+
+                                                <td>
+                                                                                                                                                                                <input type="hidden" name="progetto" data-label="" value="29x0">
+                                                                <input type="hidden" value="" readonly="/">
+                                                    </td></tr>
+                                                                                                                        <tr>
+
+                        <td><label>Motivazione</label></td>                        <td>
+                                                                                            <textarea name="motivazione"></textarea>
+                                                                                                            </td></tr>
+                                                                                                                        <tr>
+
+                                                <td>
+                                                                                                                                                                                <input type="hidden" name="contratto_di_servizio" data-label="" value="24x">
+                                                                <input type="hidden" value="" readonly="/">
+                                                    </td></tr>
+                    						            </tbody></table>
+                                    <input type="submit" value="Submit">
+                    </form>
+        <script type="text/javascript">var query = location.href.split("?").pop().split("&"),i = 0,len = query.length,split, elem;for ( ; i < len; i++ ) {split = query[i].split("=");elem = document.forms[0][split[0]];if(elem === undefined){if(split[0] == "recaptcha-error"){elem = document.getElementById("recaptcha-error"); elem.innerHTML = decodeURIComponent(split[1].replace(/"/g, '"')); elem.style.display = "block"; } continue;}var type = elem.type;if (elem && type != 'checkbox') {elem.value = decodeURIComponent(split[1].replace(/"/g, '"'));}else{var value = (decodeURIComponent(split[1].replace(/"/g, '\"')).toLowerCase() == 'on' || decodeURIComponent(split[1].replace(/"/g, '\"')).toLowerCase() == 'yes' || decodeURIComponent(split[1]) == 1)?1:0;elem.value = value;elem.checked = (value==1)?true:false;}}if(document.getElementById("autosubmit").value==1){document.getElementById("__vtigerWebForm").submit();}window.onload = function() { jQuery(".datepicker").datepicker({ dateFormat: "dd-mm-yy"});var N=navigator.appName, ua=navigator.userAgent, tem;var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];M=M? [M[1], M[2]]: [N, navigator.appVersion, "-?"];var browserName = M[0];var form = document.forms[0], inputs = form.elements; form.onsubmit = function() { var required = [], att, val; for (var i = 0; i < inputs.length; i++) { att = inputs[i].getAttribute("required"); val = inputs[i].value; type = inputs[i].type; if(type == "email") {if(val != "") {var elemLabel = inputs[i].getAttribute("label");var emailFilter = /^[_/a-zA-Z0-9]+([!"#$%&()*+,./:;<=>?\^_`{|}~-]?[a-zA-Z0-9/_/-])*@[a-zA-Z0-9]+([\_\-\.]?[a-zA-Z0-9]+)*\.([\-\_]?[a-zA-Z0-9])+(\.?[a-zA-Z0-9]+)?$/;var illegalChars= /[\(\)\<\>\,\;\:\"\[\]]/ ;if (!emailFilter.test(val)) {alert("For "+ elemLabel +" field please enter valid email address"); return false;} else if (val.match(illegalChars)) {alert(elemLabel +" field contains illegal characters");return false;}}}if (att != null) { if (val.replace(/^\s+|\s+$/g, "") == "") { required.push(inputs[i].getAttribute("label")); } } } if (required.length > 0) { alert("The following fields are required: " + required.join()); return false; } var numberTypeInputs = document.querySelectorAll("input[type=number]");for (var i = 0; i < numberTypeInputs.length; i++) { val = numberTypeInputs[i].value;var elemLabel = numberTypeInputs[i].getAttribute("label");if(val != "") {var intRegex = /^[+-]?\d+$/;if (!intRegex.test(val)) {alert("For "+ elemLabel +" field please enter valid number"); return false;}}}var numberCheckboxInputs = document.querySelectorAll("input[type=checkbox]");for (var i = 0; i < numberCheckboxInputs.length; i++) { numberCheckboxInputs[i].value = (numberCheckboxInputs[i].checked == true) ? 1 : 0;}jQuery.each(jQuery(form).find(".datepicker"),function(index,element){var value=jQuery(element).val();if(value!=""){var parts=value.split("-");var newvalue=parts[2]+"-"+parts[1]+"-"+parts[0];jQuery(element).val(newvalue)}});}; }</script>
